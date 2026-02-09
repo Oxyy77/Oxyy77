@@ -14,8 +14,8 @@ If you want to get to know me better, visit my LinkedIn profile: [LinkedIn]([htt
 
 <div style="display: flex; gap: 10px;">
 
-![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=Oxyy77&show_icons=true&theme=dark)
+![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=oxyy77&show_icons=true&theme=dark)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Oxyy77&layout=compact&theme=dark)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=oxyy77&layout=compact&theme=dark)
 
 </div>
