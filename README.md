@@ -12,11 +12,10 @@ If you want to get to know me better, visit my LinkedIn profile: [LinkedIn](http
 
 ---
 
-<div style="display: flex; gap: 10px;">
+## 📊 GitHub Statistics
 
-![GitHub Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=oxyy77&show_icons=true&theme=dark)
-
-![Top Languages](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=oxyy77&layout=compact&theme=dark)
-
-</div>
+<p align="center">
+  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=oxyy77&show_icons=true&bg_color=0a192f&title_color=64ffda&text_color=8892b0&icon_color=64ffda&hide_border=true"/>
+  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=oxyy77&layout=compact&bg_color=0a192f&title_color=64ffda&text_color=8892b0&hide_border=true"/>
+</p>
 
