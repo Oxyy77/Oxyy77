@@ -8,7 +8,7 @@ I’m passionate about building great applications and constantly exploring new 
 
 Feel free to check out some of my repositories — maybe you’ll find something interesting!
 
-If you want to get to know me better, visit my LinkedIn profile: [LinkedIn](https://www.linkedin.com/in/your-profile).
+If you want to get to know me better, visit my LinkedIn profile: [LinkedIn](http://www.linkedin.com/in/ilham-‎-29857b249).
 
 ---
 
