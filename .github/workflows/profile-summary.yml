@@ -1,31 +1,40 @@
 # Place this file at: .github/workflows/profile-summary.yml
-# in your profile repository (oxyy77/oxyy77)
+# in your profile repository (Oxyy77/Oxyy77)
 name: GitHub-Profile-Summary-Cards
 
 on:
-  # Regenerate the cards every day at 00:00 UTC
+  # Regenerate the cards once a day at 00:00 UTC
   schedule:
     - cron: "0 0 * * *"
   # Allow manual runs from the Actions tab
   workflow_dispatch:
 
-# The action commits the generated SVGs back to the repo,
-# so the default token needs write access to repository contents
-permissions:
-  contents: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
     name: generate-github-profile-summary-cards
+    # The action commits the generated SVGs back to the repo,
+    # so the built-in token needs write access to repository contents
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v4
 
-      - uses: vn7n24fzkq/github-profile-summary-cards@release/v0.0.1
+      # The correct ref is "@release" (there is no "release/v0.0.1" tag)
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
-          # Built-in token is enough for public repos.
-          # If you want private repo stats too, create a PAT and
-          # store it as a repository secret (e.g. PAT_TOKEN).
+          # The built-in token is enough for public repos.
+          # To include private repo stats, create a PAT and store it as the
+          # repo secret SUMMARY_GITHUB_TOKEN, then use it here instead.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
+          # Branch the generated cards are pushed to
+          BRANCH_NAME: "main"
+          # Jakarta is UTC+7 (used by the "productive time" card)
+          UTC_OFFSET: 7
+          # Generate only this theme so the output folder stays small
+          THEME: "tokyonight"
+          # Commit the generated files automatically
+          AUTO_PUSH: true
