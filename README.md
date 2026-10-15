@@ -15,7 +15,12 @@ If you want to get to know me better, visit my LinkedIn profile: [LinkedIn](http
 ## 📊 GitHub Statistics
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=oxyy77&show_icons=true&bg_color=0a192f&title_color=64ffda&text_color=8892b0&icon_color=64ffda&hide_border=true"/>
-  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=oxyy77&layout=compact&bg_color=0a192f&title_color=64ffda&text_color=8892b0&hide_border=true"/>
+  <img height="180em" src="https://raw.githubusercontent.com/Oxyy77/Oxyy77/main/profile-summary-card-output/tokyonight/3-stats.svg" />
+  <img height="180em" src="https://raw.githubusercontent.com/Oxyy77/Oxyy77/main/profile-summary-card-output/tokyonight/2-most-commit-language.svg" />
+</p>
+
+<p align="center">
+  <img height="180em" src="https://raw.githubusercontent.com/Oxyy77/Oxyy77/main/profile-summary-card-output/tokyonight/1-repos-per-language.svg" />
+  <img height="180em" src="https://raw.githubusercontent.com/Oxyy77/Oxyy77/main/profile-summary-card-output/tokyonight/4-productive-time.svg" />
 </p>
 
