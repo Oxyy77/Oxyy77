@@ -1,0 +1,31 @@
+# Place this file at: .github/workflows/profile-summary.yml
+# in your profile repository (oxyy77/oxyy77)
+name: GitHub-Profile-Summary-Cards
+
+on:
+  # Regenerate the cards every day at 00:00 UTC
+  schedule:
+    - cron: "0 0 * * *"
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+
+# The action commits the generated SVGs back to the repo,
+# so the default token needs write access to repository contents
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-summary-cards
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: vn7n24fzkq/github-profile-summary-cards@release/v0.0.1
+        env:
+          # Built-in token is enough for public repos.
+          # If you want private repo stats too, create a PAT and
+          # store it as a repository secret (e.g. PAT_TOKEN).
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
